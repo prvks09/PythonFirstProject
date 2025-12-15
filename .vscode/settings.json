@@ -1,0 +1,7 @@
+{
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintPath": "C:\\Users\\Vikas Puri\\.conda\\envs\\envpy\\Scripts\\pylint.exe",
+  "python.defaultInterpreterPath": "C:\\Users\\Vikas Puri\\.conda\\envs\\envpy\\python.exe",
+  "python.languageServer": "Pylance"
+}
