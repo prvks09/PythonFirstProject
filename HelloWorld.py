@@ -1,4 +1,8 @@
 import math
+import logging
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+
 # i = 3
 # print("Hello World  😊")
 # print("* * * " * 10)
@@ -61,3 +65,31 @@ def my_print():
 
 
 my_print()
+
+
+def bubble_sort(scores):
+    n = len(scores)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            logging.debug(f"Input i: {i}, j : {j}, j+1: {j+1}, List {scores}")
+            if scores[j] > scores[j+1]:
+                logging.debug(
+                    f"Swap j : {j}, value = {scores[j]}, j+1: {j+1}, value = {scores[j+1]}")
+                # scores[i], scores[j] = scores[j], scores[i]
+                temp = scores[j]
+                scores[j] = scores[j+1]
+                scores[j+1] = temp
+
+            logging.debug(f"Output i: {i}, j : {j}, j+1: {j+1}, List {scores}")
+    return scores
+
+
+scores = [87, 90, 75, 100, 100, 70]
+
+sorted_scores = bubble_sort(scores)
+highest_score = max(sorted_scores)
+lowest_score = min(sorted_scores)
+print(f"Sorted Scores: {sorted_scores}")
+print(f"Highest Score: {highest_score}")
+print("Hi How are you ")
+print(f"Lowest Score: {lowest_score}")

@@ -2,6 +2,10 @@
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "python.linting.pylintPath": "C:\\Users\\Vikas Puri\\.conda\\envs\\envpy\\Scripts\\pylint.exe",
-  "python.defaultInterpreterPath": "C:\\Users\\Vikas Puri\\.conda\\envs\\envpy\\python.exe",
-  "python.languageServer": "Pylance"
+  "python.languageServer": "Pylance",
+  "liveServer.settings.NoBrowser": true,
+  "python.defaultInterpreterPath": "C:/Users/Vikas Puri/AppData/Local/Python/pythoncore-3.14-64/python.exe",
+  "code-runner.executorMap": {
+    "python": "C:/Users/Vikas Puri/AppData/Local/Python/pythoncore-3.14-64/python.exe -m pytest"
+  }
 }
